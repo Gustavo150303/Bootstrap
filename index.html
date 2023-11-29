@@ -3,26 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Document</title>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="menu_principal" >
-        <div class="container-fluid p-3 mb- bg-danger text-white" >
-          <a class="navbar-brand" href="#">Navbar</a>
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0" id="menu_principal" > <!--Barra de Menu-->
+        <div class="container-fluid bg-danger text-white"> <!--Barra Vermelha-->
+          <a class="navbar-brand" href="#"><img src="/logo-nucleo-3-1.png"></a> <!--Barra de Menu-->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
+          </button><!--Menu Responsivo-->
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <div class="input-group mb-3" id="barra_pesquisa">
-                <input type="text" class="form-control rounded-start-pill" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                <button class="input-group-text rounded-end-5" type="submit">Search</button>
+          <div class="collapse navbar-collapse row" id="navbarSupportedContent"> <!--Pesquisar-->
+            <div class="input-group justify-content-center">
+                <input type="text" class="form-control rounded-start-pill" style="max-width: 550px;" placeholder="O que você está procurando?" aria-label="O que você está procurando?" aria-describedby="basic-addon2">
+                <button class="input-group-text rounded-end-5" type="submit"> <!--Botão de Pesquisa-->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="56" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+              </button>
               </div>
           </div>
 
-        </div>
+          <a class="" href=""> <!--Icones-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="26" fill="currentColor" class="text-black bi bi-heart" viewBox="0 0 16 16">
+              <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+            </svg>
+          </a>
+          <a class="" href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="27" fill="currentColor" class="text-black bi bi-cart3" viewBox="0 0 16 16">
+              <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+            </svg>
+          </a>
+          <a class="" href="">
+            <svg xmlns="http://www.w3.org/2000/svg" width="56" height="30" fill="currentColor" class="text-black bi bi-person" viewBox="0 0 16 16">
+              <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664z"/>
+            </svg>
+          </a>
+        </div>           
       </nav>
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+              </li>
+              </ul>
+            </div>             
+          </div>
+        </nav>
+      
+      <div id="carouselExampleDark" class="carousel carousel-dark slide carousel slide" data-bs-ride="carousel"> <!--Carousel-->
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="/imagem1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="/imagem2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="/imagem3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="5000">
+            <img src="/imagem4.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>
